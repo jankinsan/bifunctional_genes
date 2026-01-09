@@ -3,6 +3,6 @@
 All scripts and code from the Bifunctional genes paper. 
 
 ## What is a bifunctional gene?
-<img width="1778" height="743" alt="Image" src="https://github.com/user-attachments/assets/8f664d88-c575-4070-a479-9cf64a377bbf" />
+<img width="1782" height="747" alt="image" src="https://github.com/user-attachments/assets/0aea9922-a6d5-411e-b7f9-9c39067422c3" />
 
 
