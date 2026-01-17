@@ -3,18 +3,18 @@ setwd("F:/Janki/bifunctional_genes")
 #counts for other species: analysis!
 counts_status <- function(filePath, org){
   counts_dat <- read.csv(filePath)
-  counts_dat$status<- "only_mRNA"
-  counts_dat$status[counts_dat$NR_XR>0]<- "only_ncRNA"
-  counts_dat$status[intersect(which(counts_dat$NM_XM>0), which(counts_dat$NR_XR>0))]<- "hybrid"
+  counts_dat$status<- "coding"
+  counts_dat$status[counts_dat$NR_XR>0]<- "noncoding"
+  counts_dat$status[intersect(which(counts_dat$NM_XM>0), which(counts_dat$NR_XR>0))]<- "bifunctional"
   write.csv(counts_dat, file = paste0(Sys.Date(), "_counts_", org, "_genewise_status.csv"))
-  write.csv(counts_dat[counts_dat$status=="hybrid",], file = paste0(Sys.Date(), "_counts_", org, "_bifunc_genes.csv"))
+  write.csv(counts_dat[counts_dat$status=="bifunctional",], file = paste0(Sys.Date(), "_counts_", org, "_bifunc_genes.csv"))
   summary_stat<- c(sum(counts_dat$total), sum(counts_dat$NM)+sum(counts_dat$NR),
                    sum(counts_dat$NM), sum(counts_dat$NR),
                    sum(counts_dat$XM)+sum(counts_dat$XR),
                    sum(counts_dat$XM), sum(counts_dat$XR), dim(counts_dat)[1],
-                   length(which(counts_dat$status=="hybrid")),
-                   length(which(counts_dat$status=="only_mRNA")),
-                   length(which(counts_dat$status=="only_ncRNA")))
+                   length(which(counts_dat$status=="bifunctional")),
+                   length(which(counts_dat$status=="coding")),
+                   length(which(counts_dat$status=="noncoding")))
   return(summary_stat)
   }
 
