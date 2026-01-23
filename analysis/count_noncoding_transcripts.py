@@ -1,7 +1,8 @@
 #HPC COMMANDS BEFORE RUNNING R
 #conda activate nm_nr
-#srun --partition=compute --nodes=1 --ntasks-per-node=1 --time=12:00:00 --pty bash -i
-#cd /lustre/sonam.dhamija/janki_nr/
+#srun --partition=compute --nodes=1 --ntasks-per-node=1 --time=12:00:00 --pty bash -i 
+#after asking for resources
+#cd to directory with data!
 #python
 
 import re
@@ -77,8 +78,6 @@ human_df["NR_XR"]=human_df["NR"]+human_df["XR"]
 human_df.to_csv("16122023_GRCh38.p14_genewise_counts.csv")
 gene_acc.to_csv("18122023_GRCh38.p14_gene_accessions.csv")
 
-human_df.to_csv("21032024_GRCh38.p14_genewise_counts.csv")
-gene_acc.to_csv("21032024_GRCh38.p14_gene_accessions.csv")
 
 file_fasta = open("21032024_hg38_fasta_details_list.txt", "w+")
 file_fasta.writelines(fasta_details_list)
@@ -254,21 +253,21 @@ def count_transcripts(rnaFilePath, outputFileName, outputFileAcc, outputFileFast
     file_fasta.close()
     file.close()
 
-count_transcripts("mouse_rna.fna", "05032024_mouse_transcripts_counts.csv", "05032024_mouse_transcripts_accessions.csv", "05032024_mouse_transcripts_headers.csv")
-count_transcripts("zebrafish_rna.fna", "05032024_zebrafish_transcripts_counts.csv", "05032024_zebrafish_transcripts_accessions.csv", "05032024_zebrafish_transcripts_headers.csv")
-count_transcripts("chimpanzee_rna.fna", "05032024_chimpanzee_transcripts_counts.csv", "05032024_chimpanzee_transcripts_accessions.csv", "05032024_chimpanzee_transcripts_headers.csv")
+count_transcripts("mouse_rna.fna", "05032024_mouse_transcripts_counts.csv", "./counts/05032024_mouse_transcripts_accessions.csv", "05032024_mouse_transcripts_headers.csv")
+count_transcripts("zebrafish_rna.fna", "05032024_zebrafish_transcripts_counts.csv", "./counts/05032024_zebrafish_transcripts_accessions.csv", "05032024_zebrafish_transcripts_headers.csv")
+count_transcripts("chimpanzee_rna.fna", "05032024_chimpanzee_transcripts_counts.csv", "./counts/05032024_chimpanzee_transcripts_accessions.csv", "05032024_chimpanzee_transcripts_headers.csv")
 
 #18-02-2025 
 #directory was changed to /home/species_dat/
-count_transcripts("rat_ncbi_dataset/data/GCF_036323735.1/rna.fna", "18022025_rat_transcripts_counts.csv", "18022025_rat_transcripts_accessions.csv", "18022025_rat_transcripts_headers.csv")
-count_transcripts("fruitfly_ncbi_dataset/data/GCF_000001215.4/rna.fna", "18022025_fruitfly_transcripts_counts.csv", "18022025_fruitfly_transcripts_accessions.csv", "18022025_fruitfly_transcripts_headers.csv")
-count_transcripts("celegans_ncbi_dataset/data/GCF_000002985.6/rna.fna", "18022025_celegans_transcripts_counts.csv", "18022025_celegans_transcripts_accessions.csv", "18022025_celegans_transcripts_headers.csv")
-count_transcripts("/home/bioschool/phd/blz227562/species_dat/chicken_ncbi_dataset/data/GCF_016699485.2/rna.fna", "18022025_chicken_transcripts_counts.csv", "18022025_chicken_transcripts_accessions.csv", "18022025_chicken_transcripts_headers.csv")
-count_transcripts("/home/bioschool/phd/blz227562/species_dat/xenopus_ncbi_dataset/data/GCF_017654675.1/rna.fna", "18022025_xenopus_transcripts_counts.csv", "18022025_xenopus_transcripts_accessions.csv", "18022025_xenopus_transcripts_headers.csv")
-count_transcripts("/home/bioschool/phd/blz227562/species_dat/yeast_ncbi_dataset/data/GCF_000146045.2/rna.fna", "18022025_yeast_transcripts_counts.csv", "18022025_yeast_transcripts_accessions.csv", "18022025_yeast_transcripts_headers.csv")
+count_transcripts("rat_ncbi_dataset/data/GCF_036323735.1/rna.fna", "./counts/18022025_rat_transcripts_counts.csv", "./counts/18022025_rat_transcripts_accessions.csv", "./counts/18022025_rat_transcripts_headers.csv")
+count_transcripts("fruitfly_ncbi_dataset/data/GCF_000001215.4/rna.fna", "./counts/18022025_fruitfly_transcripts_counts.csv", "./counts/18022025_fruitfly_transcripts_accessions.csv", "./counts/18022025_fruitfly_transcripts_headers.csv")
+count_transcripts("celegans_ncbi_dataset/data/GCF_000002985.6/rna.fna", "./counts/18022025_celegans_transcripts_counts.csv", "./counts/18022025_celegans_transcripts_accessions.csv", "./counts/18022025_celegans_transcripts_headers.csv")
+count_transcripts("/home/bioschool/phd/blz227562/species_dat/chicken_ncbi_dataset/data/GCF_016699485.2/rna.fna", "./counts/18022025_chicken_transcripts_counts.csv", "./counts/18022025_chicken_transcripts_accessions.csv", "./counts/18022025_chicken_transcripts_headers.csv")
+count_transcripts("/home/bioschool/phd/blz227562/species_dat/xenopus_ncbi_dataset/data/GCF_017654675.1/rna.fna", "./counts/18022025_xenopus_transcripts_counts.csv", "./counts/18022025_xenopus_transcripts_accessions.csv", "./counts/18022025_xenopus_transcripts_headers.csv")
+count_transcripts("/home/bioschool/phd/blz227562/species_dat/yeast_ncbi_dataset/data/GCF_000146045.2/rna.fna", "./counts/18022025_yeast_transcripts_counts.csv", "./counts/18022025_yeast_transcripts_accessions.csv", "./counts/18022025_yeast_transcripts_headers.csv")
 
 #22-03-2025
-count_transcripts("/scratch/bioschool/phd/blz227562/bifunc/refseq/cattle_dataset/ncbi_dataset/data/GCF_002263795.3/rna.fna", "./counts/22032025_cattle_transcripts_counts.csv", "./counts/22032025_cattle_transcripts_accessions.csv", "./counts/22032025_cattle_transcripts_headers.csv")
+#count_transcripts("/scratch/bioschool/phd/blz227562/bifunc/refseq/cattle_dataset/ncbi_dataset/data/GCF_002263795.3/rna.fna", "./counts/22032025_cattle_transcripts_counts.csv", "./counts/22032025_cattle_transcripts_accessions.csv", "./counts/22032025_cattle_transcripts_headers.csv")
 count_transcripts("/scratch/bioschool/phd/blz227562/bifunc/refseq/arabidopsis_dataset/ncbi_dataset/data/GCF_000001735.4/rna.fna", "./counts/22032025_arabidopsis_transcripts_counts.csv", "./counts/22032025_arabidopsis_transcripts_accessions.csv", "./counts/22032025_arabidopsis_transcripts_headers.csv")
 count_transcripts("/scratch/bioschool/phd/blz227562/bifunc/refseq/wheat_dataset/ncbi_dataset/data/GCF_018294505.1/rna.fna", "./counts/22032025_wheat_transcripts_counts.csv", "./counts/22032025_wheat_transcripts_accessions.csv", "./counts/22032025_wheat_transcripts_headers.csv")
 count_transcripts("/scratch/bioschool/phd/blz227562/bifunc/refseq/rice_dataset/ncbi_dataset/data/GCF_034140825.1/rna.fna", "./counts/22032025_rice_transcripts_counts.csv", "./counts/22032025_rice_transcripts_accessions.csv", "./counts/22032025_rice_transcripts_headers.csv")
@@ -347,6 +346,7 @@ def count_transcripts(rnaFilePath, outputFileName, outputFileAcc, outputFileFast
     file_fasta.close()
     file.close()
 #20-04-2025
-count_transcripts("fruitfly_ncbi_dataset/data/GCF_000001215.4/rna.fna", "20042025_fruitfly_transcripts_counts.csv", "20042025_fruitfly_transcripts_accessions.csv", "20042025_fruitfly_transcripts_headers.csv")
+count_transcripts("fruitfly_ncbi_dataset/data/GCF_000001215.4/rna.fna", "./counts/20042025_fruitfly_transcripts_counts.csv", "./counts/20042025_fruitfly_transcripts_accessions.csv", "./counts/20042025_fruitfly_transcripts_headers.csv")
+
 
 
