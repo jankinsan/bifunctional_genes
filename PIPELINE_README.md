@@ -2,7 +2,7 @@ COUNTING BIFUNCTIONAL GENES
 
 REQUIRES: R, PYTHON, conda environment from nm\_nr.yaml, additional python/R libraries are explicitly mentioned in the scripts
 
-1. Count the noncoding transcripts for humans and other organisms, separates the noncoding transcripts for all genes and bifunctional genes
+1. Count the noncoding transcripts for humans and other organisms, separates the noncoding transcripts for all genes and bifunctional genes: count_noncoding_transcripts.py
 Input data was rna.fna files from the RefSeq Assembly of the respective organisms
 
 Output files in /data/counts/
