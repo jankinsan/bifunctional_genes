@@ -178,7 +178,7 @@ Outputs in /data/ORFs/blastp/05052024\_csv/
 * 05052024\_blastp-fast\_hybridGenes\_uniqueORFs\_TTG.csv
 * 05052024\_blastp-fast\_hybridGenes\_uniqueORFs\_ATG.csv
 * 05052024\_blastp-fast\_hybridGenes\_uniqueORFs\_CTG.csv
-5. Format blastp hits and match NMD status as in NCBI to predicted unique ORFs: match\_blastp\_hits\_downstream\_analysis
+5. Format blastp hits and match NMD status as in NCBI to predicted unique ORFs: match\_blastp\_hits\_downstream\_analysis.R
 
 Outputs in data/ORFs/unique\_ORFs/
 
