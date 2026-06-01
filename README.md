@@ -14,4 +14,6 @@ Bifunctional genes are genes which produce coding and nocoding transcripts. Ours
 
 <img width="1274" height="560" alt="image" src="https://github.com/user-attachments/assets/ef2d8ed1-09f9-478d-9d90-3a69fe7bd092" />
 
+## Preprint 
+
 The preprint of our work is out now on <a href="https://www.biorxiv.org/content/10.64898/2026.01.28.702170v1">bioRxiv</a>!
