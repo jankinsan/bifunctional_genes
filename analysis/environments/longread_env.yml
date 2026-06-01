@@ -1,0 +1,37 @@
+name: longread_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - r-base=4.2
+  - minimap2
+  - samtools
+  - nanoplot
+  - isoquant
+  - gffread
+  - biopython
+  - pip
+  - openjdk
+  # SQANTI3 Core Python Library Stack
+  - pysam
+  - psutil
+  - bx-python
+  - bcftools
+  # SQANTI3 External Tools called internally
+  - mummer4
+  - kallisto
+  - subread
+  # SQANTI3 Core R Library Stack
+  - r-ggplot2
+  - r-gridextra
+  - r-ggridges
+  - r-scales
+  - r-docopt
+  - r-rocr
+  - r-stringr
+  - r-dplyr
+  - r-cowplot
+  - r-reshape2
+  - r-ggrepel

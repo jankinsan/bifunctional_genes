@@ -1,0 +1,21 @@
+name: exp_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Base R and Bioconductor manager
+  - r-base
+  - r-biocmanager
+  
+  # Bioconductor packages
+  - bioconductor-genomicfeatures
+  - bioconductor-txdbmaker
+  - bioconductor-recount3
+  
+  # CRAN packages (via conda-forge)
+  - r-tidyverse
+  
+  # Command-line utilities (user-space)
+  - curl
+  - bzip2
