@@ -6,7 +6,7 @@ All publicly available RefSeq assemblies were retrieved from NCBI and are NOT up
 
 Files that were retieved from publicly available databases/tools are also linked in **PIPELINE_README.md**.
 
-Please manually search for input/output files if there are directory conflicts. Please contact me if you still run into issues.
+Please manually search for input/output files if there are directory conflicts. Please reach out if there are issues.
 
 ## What is a bifunctional gene?
 
