@@ -6,7 +6,7 @@
 
 - Files that were retieved from publicly available databases/tools are also linked in **PIPELINE_README.md**.
 
-- Tracks for expression data plotted in Figure 5 and Figure S7 (new) can be found <a href="https://genome.ucsc.edu/s/jankinsan/hg38_long_read_cell_lines">here</a> and <a href="https://genome.ucsc.edu/s/jankinsan/hg38_gtex_rna_seq_coverage">here.</a>. 
+- Tracks for expression data plotted in Figure 5 and Figure S7 (new) can be found <a href="https://genome.ucsc.edu/s/jankinsan/hg38_long_read_cell_lines">here</a> and <a href="https://genome.ucsc.edu/s/jankinsan/hg38_gtex_rna_seq_coverage">here.</a>
 
 - Please manually search for input/output files if there are directory conflicts. Please reach out if there are issues.
 
