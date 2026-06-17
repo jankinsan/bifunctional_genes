@@ -24,52 +24,57 @@ Output files in /data/counts/
 * 22032025\_wheat\_transcripts\_accessions.csv
 * 22032025\_wheat\_transcripts\_counts.csv
 * 22032025\_wheat\_transcripts\_headers.csv
-* 05032024\_chimpanzee\_transcripts\_accessions.csv"
-* 05032024\_chimpanzee\_transcripts\_counts.csv"
-* 05032024\_chimpanzee\_transcripts\_headers.csv"
-* 05032024\_mouse\_transcripts\_accessions.csv"
-* 05032024\_mouse\_transcripts\_counts.csv"
-* 05032024\_mouse\_transcripts\_headers.csv"
-* 05032024\_zebrafish\_transcripts\_accessions.csv"
-* 05032024\_zebrafish\_transcripts\_counts.csv"
-* 05032024\_zebrafish\_transcripts\_headers.csv"
-* 18022025\_celegans\_transcripts\_accessions.csv"
-* 18022025\_celegans\_transcripts\_counts.csv"
-* 18022025\_celegans\_transcripts\_headers.csv"
-* 18022025\_chicken\_transcripts\_accessions.csv"
-* 18022025\_chicken\_transcripts\_counts.csv"
-* 18022025\_chicken\_transcripts\_headers.csv"
-* 18022025\_fruitfly\_transcripts\_accessions.csv"
-* 18022025\_fruitfly\_transcripts\_counts.csv"
-* 18022025\_fruitfly\_transcripts\_headers.csv"
-* 18022025\_rat\_transcripts\_accessions.csv"
-* 18022025\_rat\_transcripts\_counts.csv"
-* 18022025\_rat\_transcripts\_headers.csv"
-* 18022025\_xenopus\_transcripts\_accessions.csv"
-* 18022025\_xenopus\_transcripts\_counts.csv"
-* 18022025\_xenopus\_transcripts\_headers.csv"
-* 18022025\_yeast\_transcripts\_accessions.csv"
-* 18022025\_yeast\_transcripts\_counts.csv"
-* 18022025\_yeast\_transcripts\_headers.csv"
-* 20042025\_fruitfly\_transcripts\_accessions.csv"
-* 20042025\_fruitfly\_transcripts\_counts.csv"
-* 20042025\_fruitfly\_transcripts\_headers.csv"
-* 22032025\_afumi\_transcripts\_accessions.csv"
-* 22032025\_afumi\_transcripts\_counts.csv"
-* 22032025\_afumi\_transcripts\_headers.csv"
-* 22032025\_aniger\_transcripts\_accessions.csv"
-* 22032025\_aniger\_transcripts\_counts.csv"
-* 22032025\_aniger\_transcripts\_headers.csv"
-* 22032025\_arabidopsis\_transcripts\_accessions.csv"
-* 22032025\_arabidopsis\_transcripts\_counts.csv"
-* 22032025\_arabidopsis\_transcripts\_headers.csv"
-* 22032025\_candida\_transcripts\_accessions.csv"
-* 22032025\_candida\_transcripts\_counts.csv"
-* 22032025\_candida\_transcripts\_headers.csv"
+* 05032024\_chimpanzee\_transcripts\_accessions.csv
+* 05032024\_chimpanzee\_transcripts\_counts.csv
+* 05032024\_chimpanzee\_transcripts\_headers.csv
+* 05032024\_mouse\_transcripts\_accessions.csv
+* 05032024\_mouse\_transcripts\_counts.csv
+* 05032024\_mouse\_transcripts\_headers.csv
+* 05032024\_zebrafish\_transcripts\_accessions.csv
+* 05032024\_zebrafish\_transcripts\_counts.csv
+* 05032024\_zebrafish\_transcripts\_headers.csv
+* 18022025\_celegans\_transcripts\_accessions.csv
+* 18022025\_celegans\_transcripts\_counts.csv
+* 18022025\_celegans\_transcripts\_headers.csv
+* 18022025\_chicken\_transcripts\_accessions.csv
+* 18022025\_chicken\_transcripts\_counts.csv
+* 18022025\_chicken\_transcripts\_headers.csv
+* 18022025\_fruitfly\_transcripts\_accessions.csv
+* 18022025\_fruitfly\_transcripts\_counts.csv
+* 18022025\_fruitfly\_transcripts\_headers.csv
+* 18022025\_rat\_transcripts\_accessions.csv
+* 18022025\_rat\_transcripts\_counts.csv
+* 18022025\_rat\_transcripts\_headers.csv
+* 18022025\_xenopus\_transcripts\_accessions.csv
+* 18022025\_xenopus\_transcripts\_counts.csv
+* 18022025\_xenopus\_transcripts\_headers.csv
+* 18022025\_yeast\_transcripts\_accessions.csv
+* 18022025\_yeast\_transcripts\_counts.csv
+* 18022025\_yeast\_transcripts\_headers.csv
+* 20042025\_fruitfly\_transcripts\_accessions.csv
+* 20042025\_fruitfly\_transcripts\_counts.csv
+* 20042025\_fruitfly\_transcripts\_headers.csv
+* 22032025\_afumi\_transcripts\_accessions.csv
+* 22032025\_afumi\_transcripts\_counts.csv
+* 22032025\_afumi\_transcripts\_headers.csv
+* 22032025\_aniger\_transcripts\_accessions.csv
+* 22032025\_aniger\_transcripts\_counts.csv
+* 22032025\_aniger\_transcripts\_headers.csv
+* 22032025\_arabidopsis\_transcripts\_accessions.csv
+* 22032025\_arabidopsis\_transcripts\_counts.csv
+* 22032025\_arabidopsis\_transcripts\_headers.csv
+* 22032025\_candida\_transcripts\_accessions.csv
+* 22032025\_candida\_transcripts\_counts.csv
+* 22032025\_candida\_transcripts\_headers.csv
+
+=============================================================================================================================================
+
 2. Assign gene status to all genes in other organisms: count\_gene\_status\_other\_species.R
 This file took outputs from previous script and also was used to plot Figures 2A and 2B in the manuscript.
 
 Output files in /data/counts/other species/
+
+=============================================================================================================================================
 
 3. Conservation of bifunctional genes and the status of their orthologs: conservation of species.R
 This file took outputs from previous script and was also used  Figures 2C and 2D in the manuscript.
@@ -77,6 +82,7 @@ Output files in /data/counts/
 * 2025-04-29\_counts\_status\_Across\_species.csv
 
 =============================================================================================================================================
+
 Comparison of GRCh38.p14 and T2T
 
 1. Load both genes with annotations and compare gene biotype annotations \& plot them: FigS2.R
@@ -85,6 +91,7 @@ No output files except for plots.
 
 
 =============================================================================================================================================
+
 ENRICHMENT ANALYSIS FOR BIFUNCTIONAL, CODING \& NONCODING GENES
 
 REQUIRES: R, clusterProfiler, ggplot2 alongwith other libraries mentioned in the script
