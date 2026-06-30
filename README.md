@@ -8,6 +8,8 @@
 
 - Tracks for expression data plotted in Figure 5 and Figure S7 (new) can be found <a href="https://genome.ucsc.edu/s/jankinsan/hg38_long_read_cell_lines">here</a> and <a href="https://genome.ucsc.edu/s/jankinsan/hg38_gtex_rna_seq_coverage">here.</a>
 
+- The shinyApp which allows for gene-specific searching is available at <a href="https://janki-insan.shinyapps.io/bifunc_database/">https://janki-insan.shinyapps.io/bifunc_database/</a>. 
+
 - Please manually search for input/output files if there are directory conflicts. Please reach out if there are issues.
 
 ## What is a bifunctional gene?
